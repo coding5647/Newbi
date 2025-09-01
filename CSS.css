@@ -2299,30 +2299,28 @@ html .bar_c38106 {
 .layer__960e4.baseLayer__960e4 {
 	background-color: var(--bg-base-tertiary);
 }
-/* ===== Override Discord Sidebar Width Vars ===== */
-
-/* Channel list sidebar */
+/* ===== Updated: Force Sidebar Resize for Rebrand UI ===== */
 :root {
-    --channels-width: 260px !important;   /* default width */
-    --sidebar-width: 260px !important;    /* fallback */
+  --channels-width: 260px !important;
+  --sidebar-width: 260px !important;
 }
 
-/* Force it to obey our min/max */
-.sidebar-1tnWFu {
-    flex: 0 0 auto !important;
-    width: var(--channels-width) !important;
-    min-width: 200px !important;
-    max-width: 600px !important;
-    resize: horizontal !important;
-    overflow: auto !important;
+/* Channel list sidebar (Rebrand class) */
+.base_c48ade .sidebar_c48ade {
+  flex: 0 0 auto !important;
+  width: var(--channels-width) !important;
+  min-width: 200px !important;
+  max-width: 600px !important;
+  resize: horizontal !important;
+  overflow: auto !important;
 }
 
-/* Server list sidebar */
-.guilds-2JjMmN {
-    flex: 0 0 auto !important;
-    width: 72px !important;  /* default bubble strip */
-    min-width: 72px !important;
-    max-width: 200px !important;
-    resize: horizontal !important;
-    overflow: auto !important;
+/* Server list sidebar (Rebrand class) */
+.base_c48ade .sidebar_c48ade > .guilds_c48ade {
+  flex: 0 0 auto !important;
+  width: 72px !important;
+  min-width: 72px !important;
+  max-width: 200px !important;
+  resize: horizontal !important;
+  overflow: auto !important;
 }
