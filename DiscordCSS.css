@@ -842,6 +842,12 @@ html.platform-osx .title_c38106 {
 			-webkit-transition: border-color 0.2s ease-in-out;
 			transition: border-color 0.2s ease-in-out;
 		}
+	}
+
+	.member__5d473 {
+    max-width: none !important; /* allows it to expand freely */
+    width: auto !important;     /* resets forced width */
+}
 	.barButtonAlt__0f481 {
 		background: none;
 		&:hover {
