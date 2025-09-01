@@ -845,8 +845,7 @@ html.platform-osx .title_c38106 {
 	}
 
 	.member__5d473 {
-    max-width: 100% !important;  /* gives it room but keeps it contained */
-    min-width: 200px;            /* optional: a floor so it doesn’t collapse */
+    max-width: auto !important;  /* gives it room but keeps it contained */
 }
 	.barButtonAlt__0f481 {
 		background: none;
