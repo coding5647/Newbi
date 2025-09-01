@@ -2299,17 +2299,22 @@ html .bar_c38106 {
 .layer__960e4.baseLayer__960e4 {
 	background-color: var(--bg-base-tertiary);
 }
+/* ===== Force Channel Sidebar Resize ===== */
 .sidebar-1tnWFu {
-    resize: horizontal !important;
+    flex: 0 0 auto !important;      /* prevent auto-lock sizing */
+    width: 260px !important;        /* default width */
+    min-width: 200px !important;    /* smallest you can shrink */
+    max-width: 600px !important;    /* largest you can stretch */
+    resize: horizontal !important;  
     overflow: auto !important;
-    min-width: 200px !important;
-    max-width: 600px !important;
 }
 
-/* Server list sidebar (far left icons) */
+/* ===== Force Server List Resize ===== */
 .guilds-2JjMmN {
+    flex: 0 0 auto !important;
+    width: 72px !important;         /* default width */
+    min-width: 72px !important;     /* don’t shrink below default */
+    max-width: 200px !important;    /* allow stretching */
     resize: horizontal !important;
     overflow: auto !important;
-    min-width: 72px !important;   /* default size of server bar */
-    max-width: 200px !important;  /* can stretch wider */
 }
