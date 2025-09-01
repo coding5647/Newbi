@@ -843,10 +843,10 @@ html.platform-osx .title_c38106 {
 			transition: border-color 0.2s ease-in-out;
 		}
 	}
-    .member__5d473 {
-    max-width: none !important; /* allows it to expand freely */
-    width: auto !important;     /* resets forced width */
-}
+
+	.member__5d473 {
+		max-width: none;
+	}
 	.barButtonAlt__0f481 {
 		background: none;
 		&:hover {
