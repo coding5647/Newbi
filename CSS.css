@@ -2299,26 +2299,29 @@ html .bar_c38106 {
 .layer__960e4.baseLayer__960e4 {
 	background-color: var(--bg-base-tertiary);
 }
-/* ===== Updated: Force Sidebar Resize for Rebrand UI ===== */
+/* Force override of Discord's internal width vars */
 :root {
+  --custom-guilds-width: 72px !important;
+  --custom-channels-width: 260px !important;
+  --guilds-width: 72px !important;
   --channels-width: 260px !important;
   --sidebar-width: 260px !important;
 }
 
-/* Channel list sidebar (Rebrand class) */
-.base_c48ade .sidebar_c48ade {
+/* Channel list sidebar */
+.sidebar_c48ade, .sidebar-1tnWFu {
   flex: 0 0 auto !important;
-  width: var(--channels-width) !important;
+  width: var(--custom-channels-width) !important;
   min-width: 200px !important;
   max-width: 600px !important;
   resize: horizontal !important;
   overflow: auto !important;
 }
 
-/* Server list sidebar (Rebrand class) */
-.base_c48ade .sidebar_c48ade > .guilds_c48ade {
+/* Server list sidebar */
+.guilds_c48ade, .guilds-2JjMmN {
   flex: 0 0 auto !important;
-  width: 72px !important;
+  width: var(--custom-guilds-width) !important;
   min-width: 72px !important;
   max-width: 200px !important;
   resize: horizontal !important;
